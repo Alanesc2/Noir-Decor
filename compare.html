@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare Aesthetics | Noir Decor</title>
+  <meta name="description" content="Which aesthetic is yours? Compare masculine room styles side by side and choose your vibe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header>
+<nav id="navbar" class="solid">
+  <a href="index.html" class="nav-logo">NOIR<span>.</span>DECOR</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="inspiration.html">Inspiration</a>
+    <a href="compare.html">Compare</a>
+    <a href="bathrooms.html">Bathrooms</a>
+    <a href="styles.html">Styles</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"       onclick="closeMobile()">Home</a>
+  <a href="inspiration.html" onclick="closeMobile()">Inspiration</a>
+  <a href="compare.html"     onclick="closeMobile()">Compare</a>
+  <a href="bathrooms.html"   onclick="closeMobile()">Bathrooms</a>
+  <a href="styles.html"      onclick="closeMobile()">Styles</a>
+  <a href="contact.html"     onclick="closeMobile()">Contact</a>
+</div>
+</header>
+
+<main>
+<div class="page-hero">
+  <p class="eyebrow">Which One Are You Choosing?</p>
+  <h1>Find Your <em>Aesthetic</em></h1>
+  <div class="gold-rule"></div>
+  <p>Click on the room that speaks to you. Each choice reveals your design DNA.</p>
+</div>
+
+<section style="background:var(--color-card-alt);border-top:1px solid var(--color-border);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="fade-up">
+      <p class="section-eyebrow">Round 1</p>
+      <h2 class="section-h2">Bedroom <em>Vibe</em></h2>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card fade-up" style="transition-delay:.1s" onclick="pickCompare(this)">
+        <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=1000&auto=format&fit=crop" alt="Warm Ambient" loading="lazy" />
+        <div class="cc-overlay"></div>
+        <div class="cc-content">
+          <div class="cc-inner">
+            <div><h3>Warm &amp; Ambient</h3><p>Rich woods, leather, and warm LED backlighting.</p></div>
+            <div class="cc-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="compare-card fade-up" style="transition-delay:.2s" onclick="pickCompare(this)">
+        <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=1000&auto=format&fit=crop" alt="Stark Monochromatic" loading="lazy" />
+        <div class="cc-overlay"></div>
+        <div class="cc-content">
+          <div class="cc-inner">
+            <div><h3>Stark Monochromatic</h3><p>Black, grey, white. Brutalist concrete textures.</p></div>
+            <div class="cc-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="compare-result" id="compareResult"></div>
+  </div>
+</section>
+
+<section style="background:var(--color-background);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="fade-up">
+      <p class="section-eyebrow">Round 2</p>
+      <h2 class="section-h2">Living Room <em>Energy</em></h2>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card fade-up" style="transition-delay:.1s" onclick="pickCompare(this)">
+        <img src="https://images.unsplash.com/photo-1600607686527-6fb886090705?q=80&w=1000&auto=format&fit=crop" alt="Minimalist" loading="lazy" />
+        <div class="cc-overlay"></div>
+        <div class="cc-content">
+          <div class="cc-inner">
+            <div><h3>Clean Minimalist</h3><p>Neutral palette, zero clutter, intentional objects only.</p></div>
+            <div class="cc-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="compare-card fade-up" style="transition-delay:.2s" onclick="pickCompare(this)">
+        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1000&auto=format&fit=crop" alt="Heritage" loading="lazy" />
+        <div class="cc-overlay"></div>
+        <div class="cc-content">
+          <div class="cc-inner">
+            <div><h3>Dark Heritage</h3><p>Walnut shelves, leather chairs, aged brass accents.</p></div>
+            <div class="cc-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="compare-result" id="compareResult2"></div>
+  </div>
+</section>
+
+<section style="background:var(--color-card-alt);border-top:1px solid var(--color-border);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="fade-up">
+      <p class="section-eyebrow">Round 3</p>
+      <h2 class="section-h2">Workspace <em>Setup</em></h2>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card fade-up" style="transition-delay:.1s" onclick="pickCompare(this)">
+        <img src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?q=80&w=1000&auto=format&fit=crop" alt="Tech Setup" loading="lazy" />
+        <div class="cc-overlay"></div>
+        <div class="cc-content">
+          <div class="cc-inner">
+            <div><h3>Tech Command Center</h3><p>RGB accents, multiple monitors, immersive experience.</p></div>
+            <div class="cc-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="compare-card fade-up" style="transition-delay:.2s" onclick="pickCompare(this)">
+        <img src="https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?q=80&w=1000&auto=format&fit=crop" alt="Executive Office" loading="lazy" />
+        <div class="cc-overlay"></div>
+        <div class="cc-content">
+          <div class="cc-inner">
+            <div><h3>Executive Office</h3><p>Desk lamp, leather chair, clean wood — focus-first design.</p></div>
+            <div class="cc-check">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="compare-result" id="compareResult3"></div>
+    <div style="text-align:center;margin-top:3rem;" class="fade-up">
+      <a href="styles.html" class="btn-gold">Explore All Style Archetypes</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">NOIR<span>.</span>DECOR</a>
+      <p>Curating exceptional interior spaces for the modern gentleman. Elevate your environment, elevate your mind.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="compare.html">Compare Aesthetics</a></li>
+        <li><a href="bathrooms.html">Sanctuaries</a></li>
+        <li><a href="styles.html">Style Archetypes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:alan.esc@noirdecor.com">alan.esc@noirdecor.com</a></li>
+      </ul>
+      <div class="social-row" style="margin-top:1rem;">
+        <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg></a>
+        <a href="#" class="social-btn" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+        <a href="#" class="social-btn" aria-label="Pinterest"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.16 1.22-5.16s-.31-.62-.31-1.54c0-1.44.84-2.52 1.88-2.52.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.85 0 3.09-2.37 3.09-5.16 0-2.13-1.44-3.62-3.49-3.62-2.38 0-3.77 1.79-3.77 3.63 0 .72.28 1.49.62 1.91.07.08.08.15.06.23l-.23.94c-.04.15-.12.18-.28.11-1.03-.48-1.67-1.99-1.67-3.2 0-2.6 1.89-4.99 5.44-4.99 2.86 0 5.08 2.04 5.08 4.76 0 2.84-1.79 5.12-4.27 5.12-.84 0-1.62-.44-1.89-.95l-.51 1.92c-.19.72-.69 1.62-1.02 2.16.77.24 1.58.37 2.42.37 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Noir Decor. All rights reserved.</p>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+<script>
+  document.querySelectorAll('.compare-grid').forEach(grid => {
+    grid.querySelectorAll('.compare-card').forEach(card => {
+      card.addEventListener('click', () => {
+        grid.querySelectorAll('.compare-card').forEach(c => c.classList.remove('chosen'));
+        card.classList.add('chosen');
+        const result = grid.nextElementSibling;
+        if (result && result.classList.contains('compare-result')) {
+          result.textContent = 'You chose: ' + card.querySelector('h3').textContent;
+          result.classList.add('visible');
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>
