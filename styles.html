@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Archetypes | Noir Decor</title>
+  <meta name="description" content="Explore masculine design archetypes: Tech Integrated, Classic Masculine, Urban Industrial, Dark Luxury, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<header>
+<nav id="navbar" class="solid">
+  <a href="index.html" class="nav-logo">NOIR<span>.</span>DECOR</a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="inspiration.html">Inspiration</a>
+    <a href="compare.html">Compare</a>
+    <a href="bathrooms.html">Bathrooms</a>
+    <a href="styles.html">Styles</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"       onclick="closeMobile()">Home</a>
+  <a href="inspiration.html" onclick="closeMobile()">Inspiration</a>
+  <a href="compare.html"     onclick="closeMobile()">Compare</a>
+  <a href="bathrooms.html"   onclick="closeMobile()">Bathrooms</a>
+  <a href="styles.html"      onclick="closeMobile()">Styles</a>
+  <a href="contact.html"     onclick="closeMobile()">Contact</a>
+</div>
+</header>
+
+<main>
+<div class="page-hero">
+  <p class="eyebrow">Design DNA</p>
+  <h1>Explore By <em>Archetype</em></h1>
+  <div class="gold-rule"></div>
+  <p>Every man's space reflects his identity. Find the archetype that aligns with yours.</p>
+</div>
+
+<section style="background:var(--color-card-alt);">
+  <div class="container">
+    <div class="cats-grid">
+      <div class="cat-card fade-up" style="transition-delay:.1s">
+        <img src="https://images.unsplash.com/photo-1664355680555-12687f77e0d3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaCUyMGRlc2t8ZW58MHx8MHx8fDA%3D&v=1" alt="Tech Integrated" loading="lazy" />
+        <div class="cat-overlay"></div>
+        <div class="cat-label">
+          <h3>Tech Integrated</h3>
+          <p>Hidden wires, immersive displays</p>
+          <div class="cat-rule"></div>
+        </div>
+      </div>
+      <div class="cat-card fade-up" style="transition-delay:.2s">
+        <img src="https://images.unsplash.com/photo-1759173084016-08b0fffd377c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9vbSUyMG1hc2N1bGluZXxlbnwwfHwwfHx8MA%3D%3D&v=1" alt="Classic Masculine" loading="lazy" />
+        <div class="cat-overlay"></div>
+        <div class="cat-label">
+          <h3>Classic Masculine</h3>
+          <p>Walnut, leather, heritage</p>
+          <div class="cat-rule"></div>
+        </div>
+      </div>
+      <div class="cat-card fade-up" style="transition-delay:.3s">
+        <img src="https://media.istockphoto.com/id/2151944932/photo/modern-loft-living-room-with-dark-brick-walls.webp?a=1&b=1&s=612x612&w=0&k=20&c=s4LgbOWDmIOBYNHzQNgKQuNpAh9Xqm6aEBdsWfzIQY4=&v=1" alt="Urban Industrial" loading="lazy" />
+        <div class="cat-overlay"></div>
+        <div class="cat-label">
+          <h3>Urban Industrial</h3>
+          <p>Exposed brick, steel accents</p>
+          <div class="cat-rule"></div>
+        </div>
+      </div>
+      <div class="cat-card fade-up" style="transition-delay:.4s">
+        <img src="https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bWluaW1hbGlzdCUyMHJvb218ZW58MHx8MHx8fDA%3D&v=1" alt="Modern Minimalist" loading="lazy" />
+        <div class="cat-overlay"></div>
+        <div class="cat-label">
+          <h3>Modern Minimalist</h3>
+          <p>Clean lines, neutral tones</p>
+          <div class="cat-rule"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-background);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="fade-up">
+      <p class="section-eyebrow">Deep Dive</p>
+      <h2 class="section-h2">What Defines Each <em>Archetype</em></h2>
+    </div>
+    <div class="fade-up" style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;background:var(--color-card);border:1px solid var(--color-border);">
+        <thead>
+          <tr style="background:var(--color-card-alt);">
+            <th style="padding:1.5rem;text-align:left;font-family:var(--font-serif);font-size:1.1rem;font-weight:400;color:var(--color-text);border-bottom:1px solid var(--color-border);border-right:1px solid var(--color-border);">Archetype</th>
+            <th style="padding:1.5rem;text-align:left;font-family:var(--font-serif);font-size:1.1rem;font-weight:400;color:var(--color-text);border-bottom:1px solid var(--color-border);border-right:1px solid var(--color-border);">Key Characteristics</th>
+            <th style="padding:1.5rem;text-align:left;font-family:var(--font-serif);font-size:1.1rem;font-weight:400;color:var(--color-text);border-bottom:1px solid var(--color-border);">Best For</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid var(--color-border);">
+            <td style="padding:1.5rem;border-right:1px solid var(--color-border);">
+              <p style="color:var(--color-primary);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem">Archetype 01</p>
+              <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:300">Dark Luxury</h3>
+            </td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;border-right:1px solid var(--color-border);">Deep blacks, charcoal tones, velvet headboards, custom millwork, gold hardware. The penthouse aesthetic.</td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;">High-rise apartments, executive suites, those who value opulence and sophistication.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--color-border);">
+            <td style="padding:1.5rem;border-right:1px solid var(--color-border);">
+              <p style="color:var(--color-primary);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem">Archetype 02</p>
+              <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:300">Cozy Masculine</h3>
+            </td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;border-right:1px solid var(--color-border);">Warm earth tones, plush textiles, dim Edison bulbs. Mountain cabin meets city apartment.</td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;">Loft spaces, studio apartments, those seeking comfort and a lived-in refuge.</td>
+          </tr>
+          <tr style="border-bottom:1px solid var(--color-border);">
+            <td style="padding:1.5rem;border-right:1px solid var(--color-border);">
+              <p style="color:var(--color-primary);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem">Archetype 03</p>
+              <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:300">Minimalist Precision</h3>
+            </td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;border-right:1px solid var(--color-border);">Every object earns its place. No decorative clutter. Neutral palette, clean lines, disciplined design.</td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;">Small spaces, home offices, those who value clarity and intentional living.</td>
+          </tr>
+          <tr>
+            <td style="padding:1.5rem;border-right:1px solid var(--color-border);">
+              <p style="color:var(--color-primary);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem">Archetype 04</p>
+              <h3 style="font-family:var(--font-serif);font-size:1.4rem;font-weight:300">Dark Academia</h3>
+            </td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;border-right:1px solid var(--color-border);">Filled bookshelves, antique desk lamps, chesterfield sofas. Deep greens and browns for thinkers.</td>
+            <td style="padding:1.5rem;color:var(--color-muted);font-size:.92rem;line-height:1.6;">Home libraries, studies, scholars and those who read, study, and think deeply.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="text-align:center;margin-top:3rem;" class="fade-up">
+      <a href="compare.html" class="btn-gold">Compare Room Aesthetics</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--color-card-alt);border-top:1px solid var(--color-border);">
+  <div class="container-wide">
+    <div style="text-align:center;margin-bottom:3rem;" class="fade-up">
+      <p class="section-eyebrow">More Looks</p>
+      <h2 class="section-h2">Additional <em>Inspiration</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;">
+      <div class="gallery-item fade-up" style="height:280px;transition-delay:.1s">
+        <img src="https://images.unsplash.com/photo-1541194577687-8c63bf9e7ee3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFyayUyMHJvb218ZW58MHx8MHx8fDA%3D&v=1" alt="Dark Bedroom" loading="lazy" />
+        <div class="gi-overlay"></div>
+        <div class="gi-label"><h3>Nocturnal Rest</h3></div>
+      </div>
+      <div class="gallery-item fade-up" style="height:280px;transition-delay:.2s">
+        <img src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZGVza3xlbnwwfHwwfHx8MA%3D%3D&v=1" alt="Office" loading="lazy" />
+        <div class="gi-overlay"></div>
+        <div class="gi-label"><h3>Executive Study</h3></div>
+      </div>
+      <div class="gallery-item fade-up" style="height:280px;transition-delay:.3s">
+        <img src="https://plus.unsplash.com/premium_photo-1680784320956-e2c11bdd51bb?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2ltcGxlJTIwcm9vbXxlbnwwfHwwfHx8MA%3D%3D&v=1" alt="Concrete" loading="lazy" />
+        <div class="gi-overlay"></div>
+        <div class="gi-label"><h3>Brutalist Living</h3></div>
+      </div>
+      <div class="gallery-item fade-up" style="height:280px;transition-delay:.4s">
+        <img src="https://images.unsplash.com/photo-1775200541794-adb334a9e9c8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXVkaW9waGlsZSUyMGRlbnxlbnwwfHwwfHx8MA%3D%3D&v=1" alt="Audio" loading="lazy" />
+        <div class="gi-overlay"></div>
+        <div class="gi-label"><h3>Audiophile Den</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">NOIR<span>.</span>DECOR</a>
+      <p>Curating exceptional interior spaces for the modern gentleman. Elevate your environment, elevate your mind.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="compare.html">Compare Aesthetics</a></li>
+        <li><a href="bathrooms.html">Sanctuaries</a></li>
+        <li><a href="styles.html">Style Archetypes</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:alan.esc@noirdecor.com">alan.esc@noirdecor.com</a></li>
+      </ul>
+      <div class="social-row" style="margin-top:1rem;">
+        <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor"/></svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-btn" aria-label="Twitter">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+        </a>
+        <a href="https://pinterest.com" target="_blank" class="social-btn" aria-label="Pinterest">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.16 1.22-5.16s-.31-.62-.31-1.54c0-1.44.84-2.52 1.88-2.52.89 0 1.32.67 1.32 1.47 0 .9-.57 2.24-.87 3.48-.25 1.04.52 1.88 1.54 1.88 1.85 0 3.09-2.37 3.09-5.16 0-2.13-1.44-3.62-3.49-3.62-2.38 0-3.77 1.79-3.77 3.63 0 .72.28 1.49.62 1.91.07.08.08.15.06.23l-.23.94c-.04.15-.12.18-.28.11-1.03-.48-1.67-1.99-1.67-3.2 0-2.6 1.89-4.99 5.44-4.99 2.86 0 5.08 2.04 5.08 4.76 0 2.84-1.79 5.12-4.27 5.12-.84 0-1.62-.44-1.89-.95l-.51 1.92c-.19.72-.69 1.62-1.02 2.16.77.24 1.58.37 2.42.37 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>  Noir Decor. All rights reserved.</p>
+    <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+
+<script src="./main.js"></script>
+</body>
+</html>
